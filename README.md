@@ -1,6 +1,6 @@
 # A bot to scrape the amazon site
 
-## Steps to run the project:
+## Steps to run the project: " https://github.com/Davi-Alves-Fogaroli/bot_amazon/blob/main/README.md "
 
 ### 1º step: 
 -After unzipping the zip and opening the project in your code versioner, you will need to download the "pipenv" virtual environment
