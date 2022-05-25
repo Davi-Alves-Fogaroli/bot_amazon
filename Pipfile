@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 django = "*"
 selenium = "*"
+pandas = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
