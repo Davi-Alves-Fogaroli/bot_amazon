@@ -8,7 +8,6 @@
 - $ pip install pipenv
 - $ pipenv shell
 - $ pipenv install
-- $ pipenv lock
 
 ### 2º step:
 -After starting and configuring the virtual environment, you will need to download the crhomedriver in your browser's version
