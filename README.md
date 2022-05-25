@@ -2,6 +2,11 @@
 
 ## Steps to run the project: " https://github.com/Davi-Alves-Fogaroli/bot_amazon/blob/main/README.md "
 
+#### To clone repositori 
+- $ git init 
+- $ git remote add origin https://github.com/Davi-Alves-Fogaroli/bot_amazon.git
+- $ git pull origin main
+
 ### 1º step: 
 -After unzipping the zip and opening the project in your code versioner, you will need to download the "pipenv" virtual environment
 -Reference : " https://pipenv.pypa.io/en/latest/ "
