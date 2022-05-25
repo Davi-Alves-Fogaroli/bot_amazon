@@ -14,13 +14,13 @@
 -Reference : " https://chromedriver.chromium.org/downloads "
 -To find the version of your browser follow the step by step of the images below
 
--image 1:![image](https://user-images.githubusercontent.com/61630258/170256891-c7cdcf28-6f35-4765-891c-64ef388c2182.png)
+![image](https://user-images.githubusercontent.com/61630258/170256891-c7cdcf28-6f35-4765-891c-64ef388c2182.png)
 
--image 2:![image](https://user-images.githubusercontent.com/61630258/170257075-632d6097-9768-41e3-a35e-cc29492da081.png)
+![image](https://user-images.githubusercontent.com/61630258/170257075-632d6097-9768-41e3-a35e-cc29492da081.png)
 
--image 3:![image](https://user-images.githubusercontent.com/61630258/170257175-f8e02982-8de8-4e00-9294-6e04b4496000.png)
+![image](https://user-images.githubusercontent.com/61630258/170257175-f8e02982-8de8-4e00-9294-6e04b4496000.png)
 
--image 4:![image](https://user-images.githubusercontent.com/61630258/170257210-bcd4bfd1-5c0b-4378-9704-77dd3b7d6fb3.png)
+![image](https://user-images.githubusercontent.com/61630258/170257210-bcd4bfd1-5c0b-4378-9704-77dd3b7d6fb3.png)
 
 -After downloading and unzipping, put your driver in the "driver" folder
 
