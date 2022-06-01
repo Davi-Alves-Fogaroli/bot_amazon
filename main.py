@@ -1,7 +1,9 @@
 # lIBS
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 import json
-# import os
+import os
+# Error libs
+from selenium.common.exceptions import WebDriverException
 # WEBDRIVER
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -11,7 +13,7 @@ from selenium import webdriver
 
 print("....Start....")
 
-# load_dotenv()
+load_dotenv()
 
 # configure and define webDriver
 options = Options()
@@ -24,8 +26,8 @@ try :
     driver.get("https://www.amazon.com.br/")
     driver.maximize_window()
 
-except SessionNotCreatedException :
-    print("Verify you crhomedriver driver version") 
+except WebDriverException :# SessionNotCreatedException :
+    print("\n\n\n","ERROR:","Verify you crhomedriver driver version and yor connection","\n\n\n") 
 
 # locate the search bar, input the specific key and search for...
 driver.find_element(By.ID, "twotabsearchtextbox").send_keys("iphone" + Keys.ENTER)
@@ -33,16 +35,15 @@ driver.find_element(By.ID, "twotabsearchtextbox").send_keys("iphone" + Keys.ENTE
 # find all products cards and some garbage
 card = driver.find_elements(By.CSS_SELECTOR, "div[data-asin]")
 
-count = 1
 dic= {}
-file = open('json/data_iphone.json', 'w', encoding ='utf8') 
 list=[]
+file = open('json/data_iphone.json', 'w', encoding ='utf8') 
 
 for x,y in enumerate(card):
    
     list_text1 = y.text
     list_text1_split = list_text1.split("\n")
-    print("--"*30,"\n",list_text1.split("\n"))
+    # print("--"*30,"\n",list_text1.split("\n"))
     
     if len(list_text1_split) < 4 :
         continue
@@ -74,5 +75,5 @@ for x,y in enumerate(card):
 list.append(dic)
 json.dump(list, file, indent=2)    
 
-print("_"*100,dic)
+# print("_"*100,dic)
 file.close()
