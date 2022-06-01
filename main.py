@@ -2,8 +2,6 @@
 # from dotenv import load_dotenv
 import json
 # import os
-# EXCEPTIONS
-from selenium.common.exceptions import SessionNotCreatedException
 # WEBDRIVER
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
