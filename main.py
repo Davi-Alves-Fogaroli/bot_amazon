@@ -34,13 +34,13 @@ driver.find_element(By.ID, "twotabsearchtextbox").send_keys("iphone" + Keys.ENTE
 
 # find all products cards and some garbage
 card = driver.find_elements(By.CSS_SELECTOR, "div[data-asin]")
-
+# print("card:", card)
 dic= {}
 list=[]
 file = open('json/data_iphone.json', 'w', encoding ='utf8') 
 
 for x,y in enumerate(card):
-   
+    # print("Y==============", y)
     list_text1 = y.text
     list_text1_split = list_text1.split("\n")
     # print("--"*30,"\n",list_text1.split("\n"))
